@@ -1,0 +1,133 @@
+.cs-header {
+    position: relative;
+    width: 100%;
+    padding: 20px 0px;
+    background: #ffffff;
+}
+.cs-header .cs-flex {
+	display: flex;
+	justify-content: space-between;
+}
+.cs-header .cs-flex div {
+    flex: 2;
+}
+.cs-header .cs-content {
+    max-width: 94% !important;
+    margin: 0px auto;
+}
+.cs-business {
+	font-size: 24px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+/* LOGO */
+.cs-flex-box.cs-logo-container {
+    position: relative;
+}
+
+img.cs-logo {
+    position: absolute;
+    top: -30px;
+    max-width: 220px;
+}
+
+
+/* NAVIGATION */
+.cs-active {
+    border-bottom: solid 3px #272262 !important;
+}
+.cs-flex-box.cs-nav a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #272262;
+    padding: 3px 0px;
+    border-top: solid 3px transparent;
+    border-bottom: solid 3px transparent;
+    transition: 0.6s;
+}
+.cs-flex-box.cs-nav a:hover {
+    border-bottom: solid 3px #272262;
+    transition: 0.6s;
+}
+.cs-flex-box.cs-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-width: 80% !important;
+    justify-content: flex-end;
+}
+.cs-nav-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    img.cs-logo {
+        position: relative;
+        top: unset;
+        max-width: 170px;
+    }
+    .cs-header {
+        position: absolute;
+        width: 100%;
+        padding: 30px 0px;
+        background: transparent;
+    }
+    .cs-flex-box.cs-nav , .cs-nav-box {
+        display: none;
+    }
+    .cs-nav-mobile {
+        display: block;
+    }
+    .cs-header .cs-flex {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 40px;
+        align-items: center;
+    }
+    .cs-flex-box.cs-nav-mobile {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .cs-nav-mobile .cs-nav-box {
+        flex-direction: column;
+        position: absolute;
+        background: #272261eb;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 0px;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+    button.cs-button-light.cs-x {
+        position: absolute;
+        right: 40px;
+    }
+    .cs-nav-mobile a.cs-active {
+        border-bottom: solid 3px #ffffff !important;
+    }
+    .cs-nav-mobile .cs-nav-box a {
+        font-size: 20px;
+        padding: 5px;
+        color: #ffffff !important;
+        text-decoration: none;
+    }
+    
+    .cs-nav-box-right {
+        display: flex;
+        padding: 40px;
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .cs-nav-box-right {
+        padding: 20px;
+    }
+}

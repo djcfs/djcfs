@@ -1,0 +1,370 @@
+body { position: relative; padding: 0px; margin: 0px; background: url('../images/cubes.png'); }
+html { scroll-behavior: smooth;  }
+
+/* CONTAINERS */
+.cs-main {
+	width: 100%;
+	padding: 100px 0px;
+}
+.cs-content {
+	width: 100%;
+	max-width: 1300px;
+	margin: 0px auto;
+}
+.cs-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+}
+.cs-flex-box {
+	flex: 2;
+}
+.cs-flex-balanced-height {
+	align-items: unset !important;
+}
+.cs-spacing {
+	padding: 40px;
+}
+.cs-image {
+	max-width: 500px;
+}
+/* END OF CONTAINERS */
+
+/* BACKGROUND */
+.cs-bg-light-2 {
+	background: url('../images/cubes.png');
+	background-color: #f2f2f2;
+}
+.cs-bg-gray { background: #f4f4f4; }
+.cs-home-bg-foot {
+    background: linear-gradient(1deg, #000000d6, #202445c7) , url(../images/home-bg-foot.PNG);
+    background-size: cover;
+    background-position: center center;
+}
+/* END BACKGROUND */
+
+/* FONT STYLES */
+.cs-clr-light { color: #ffffff; }
+.cs-clr-yellow { color: #ffda84; }
+.cs-clr-blue { color: #272264; }
+.cs-clr-dark { color: #252525; }
+
+h1,h2,h3,h4,h5 { font-family: Poppins, sans-serif; }
+p,a,li,button,span,div { font-family: Montserrat, sans-serif; }
+
+h1 { font-size: 64px; line-height: 80px; margin: 0px 0px 20px 0px; text-transform:uppercase; }
+
+h2 { font-size: 50px; line-height: 44px; color: #202445; margin: 0px 0px 20px 0px; text-transform:uppercase; }
+h2 span { font-size: 24px; letter-spacing: 5px; line-height: 45px; font-weight: normal; text-transform: uppercase; background: #ffda84; padding: 10px; }
+
+h3 { font-size: 40px; line-height: 44px; margin: 0px 0px 20px 0px; text-transform:uppercase; }
+h3 span { font-size: 24px; letter-spacing: 5px; line-height: 45px; font-weight: normal; text-transform: uppercase; background: #ffda84; padding: 10px; }
+
+h4 { font-size: 30px; margin: 15px 0px; }
+h4 span { font-size:24px; font-weight:normal; display: block; }
+
+h5 { font-size: 24px; line-height: 24px; margin: 0px 0px 8px 0px; }
+h5 span { font-weight: 500; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; }
+
+p,li { font-size: 20px; line-height: 30px; margin: 0px 0px 20px 0px; }
+
+.cs-first-h { margin-top: 0px !important; }
+.cs-last-p { margin: 0px !important; }
+.cs-margin-bottom { margin-bottom: 30px; }
+/* END FONT STYLES */
+
+/* IMAGES */
+img {
+	max-width: 100%;
+}
+.cs-flex-box.cs-image {
+	position: relative;
+}
+.cs-flex-box.cs-image img {
+	max-width: 90%;
+    border: solid 8px #ffffff !important;
+    box-shadow: 0px 0px 40px #0000002b;
+}
+/* END IMAGES */
+
+/* BUTTON STYLES */
+button {
+	border-radius: 5px;
+	border: none;
+	padding: 10px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	transition: 0.4s;
+	box-shadow: 0px 3px 10px #0000003b;
+}
+button:hover {
+	cursor: pointer;
+	transition: 0.4s;
+}
+button.cs-full {
+    width: 100%;
+    border-radius: 0px;
+    background: #202445;
+    color: #ffda84;
+    padding: 10px;
+}
+button.cs-full:hover {
+    background: #ffda84;
+    color: #202445;
+    letter-spacing: 3px;
+}
+.cs-button-light { background: #ffda84; color: #202445; border-bottom: solid 3px #ffffff; }
+.cs-button-dark { background: #272264; color: #ffda84; border-bottom: solid 3px #ffda84; }
+.cs-button-purple { background:#ed40a9; color: #ffffff; border-bottom: solid 3px #c52787; }
+.cs-button-purple:hover {
+    background: #700042;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+.cs-button-light:hover {
+    background: #ffcc5a;
+    color: #202445;
+    letter-spacing: 3px;
+    border-bottom: solid 3px #202445;
+}
+.cs-button-dark:hover {
+    background: #ffda84;
+    color: #202445;
+    letter-spacing: 3px;
+    border-bottom: solid 3px #202445;
+}
+/* END BUTTON STYLES */
+
+/* HERO SECTION */
+.cs-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    background: linear-gradient(1deg, #02002ecc, #3c3c3c8c) , url(../images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: right;
+}
+.cs-sub-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background: linear-gradient(1deg, #000000d6, #202445c7) , url(../images/hero-inner-image.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cs-hero-content {
+    margin-bottom: 130px;
+    text-align: center;
+}
+
+.cs-hero h1 {
+	font-size: 90px !important;
+	letter-spacing:5px;
+	margin-right: -10px;
+}
+.cs-hero h1 span {
+	display: block;
+	font-size: 70px !important;
+	font-weight:normal;
+	letter-spacing: 1px;
+}
+.cs-hero h1 , .cs-sub-hero h1 {
+	color: #ffffff !important;
+	text-shadow: -3px 4px 6px #000000;
+}
+/* END HERO SECTION */
+
+/* OVERLAP SECTION */
+.cs-overlap {
+    margin-top: -7%;
+}
+.cs-overlap-our-team {
+	margin-top: -4% !important;
+	padding-bottom: 80px;
+}
+.cs-overlap-our-services {
+	margin-top: -4% !important;
+}
+.cs-overlap .cs-flex {
+	gap: 20px;
+	align-items: unset !important;
+}
+.cs-services {
+    background: #ffffff;
+    box-shadow: 0px 0px 40px #34343421;
+    padding: 30px 20px;
+    text-align: center;
+}
+.cs-services p {
+	font-size: 18px !important;
+}
+.cs-our-team {
+	flex-wrap: wrap;
+}
+.cs-member {
+    background: #ffffff;
+    box-shadow: 0px 0px 40px #34343421;
+    padding: 5px;
+    text-align: center;
+    flex-basis: 20%;
+}
+.cs-team-info {
+    padding: 15px 20px;
+}
+.cs-services h4 {
+	margin: 15px 0px 10px 0px !important;
+}
+/* END OVERLAP SECTION */
+
+/* Watermark Logo */
+.cs-watermark {
+	position: relative;
+}
+.cs-watermark h2, .cs-watermark p , .cs-watermark img {
+	    position: relative;
+	    z-index: 2;
+}
+img.cs-watermark-logo {
+    position: absolute;
+    max-width: 35%;
+    top: 9%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    opacity: 0.2;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* LOCATIONS BOX */
+.cs-locations {
+	box-shadow: 0px 0px 40px #34343421;
+}
+.cs-locations-desc {
+	padding: 20px;
+}
+.cs-locations p {
+	font-size: 18px !important;
+}
+.cs-locations p:last-child {
+	margin-bottom: 5px;
+}
+/* END LOCATION BOX */
+
+
+/* CONTACT BOX */
+.cs-flex-box.cs-contact-box {
+    background: #ffffff00;
+    border: solid 5px #ffffff;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+}
+.cs-flex-box.cs-contact-box:hover {
+    background: #ffffff;
+    border: solid 5px #ffffff;
+}
+.cs-flex-box.cs-contact-box h4 {
+	color: #ffda84;
+}
+.cs-flex-box.cs-contact-box p {
+	color: #ffffff;
+}
+.cs-flex-box.cs-contact-box:hover.cs-flex-box.cs-contact-box h4 {
+    color: #202445 !important;
+}
+.cs-flex-box.cs-contact-box:hover.cs-flex-box.cs-contact-box p {
+    color: #202020 !important;
+}
+
+@media only screen and (max-width: 900px) {
+	.cs-flex {
+	    flex-direction: column;
+	}
+	.cs-main {
+	    width: auto;
+	    padding: 60px;
+	}
+	.cs-hero {
+		background: linear-gradient(0deg, #02002ecc, #fffce547) , url(../images/hero-image.jpg);
+		background-size: cover;
+		height: unset;
+	    min-height: unset;
+	    padding: 190px 30px 50px 30px;
+	    text-align: center;
+	}
+	.cs-hero-content {
+		padding: 0px;
+		    margin-bottom: 45px;
+	}
+	.cs-hero h1 {
+	    font-size: 66px !important;
+	    line-height: 60px !important;
+	    margin-right: 0px;
+	    margin-top: 80px;
+	}
+	.cs-hero h1 span {
+	    font-size: 36px !important;
+    	line-height: 38px;
+	}
+	.cs-services {
+	    max-width: 60%;
+	    padding: 40px;
+	    margin: 0px auto;
+	}
+	.cs-sub-hero {
+	    height: unset;
+	    padding: 270px 0px 70px 0px;
+	}
+	.cs-member {
+	    max-width: 400px;
+	    margin: 0px auto;
+	}
+	.cs-flex.cs-our-team {
+	    padding: 0px 30px;
+	}
+	img.cs-watermark-logo {
+		max-width: 80%;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.cs-services {
+	    max-width: 60%;
+	    padding: 40px;
+	    margin: 0px auto;
+	}
+	.cs-main {
+	    width: auto;
+	    padding: 40px;
+	}
+	.cs-flex {
+	    gap: 10px;
+	}
+	h1 {
+	    font-size: 40px; line-height: 50px;
+	}
+	h2 {
+	    font-size: 36px; line-height: 46px;
+	}
+	h4 {
+	    font-size: 28px;
+	}
+	p , li {
+		font-size: 16px !important;
+	}
+	.cs-flex-box.cs-contact-box {
+	    padding: 20px;
+	}
+}
