@@ -28,6 +28,9 @@ html { scroll-behavior: smooth;  }
 }
 .cs-image {
 	max-width: 500px;
+	display: flex;
+	align-content: center;
+    justify-content: center;
 }
 /* END OF CONTAINERS */
 
@@ -36,7 +39,7 @@ html { scroll-behavior: smooth;  }
 	background: url('../images/cubes.png');
 	background-color: #f2f2f2;
 }
-.cs-bg-gray { background: #f4f4f4; }
+.cs-bg-gray { background: #ebebeb; }
 .cs-home-bg-foot {
     background: linear-gradient(1deg, #000000d6, #202445c7) , url(../images/home-bg-foot.PNG);
     background-size: cover;
@@ -53,18 +56,18 @@ html { scroll-behavior: smooth;  }
 h1,h2,h3,h4,h5 { font-family: Poppins, sans-serif; }
 p,a,li,button,span,div { font-family: Montserrat, sans-serif; }
 
-h1 { font-size: 64px; line-height: 80px; margin: 0px 0px 20px 0px; text-transform:uppercase; }
+h1 { font-size: 60px; line-height: 80px; margin: 0px 0px 20px 0px; text-transform:uppercase; }
 
-h2 { font-size: 50px; line-height: 44px; color: #202445; margin: 0px 0px 20px 0px; text-transform:uppercase; }
+h2 { font-size: 44px; line-height: 44px; color: #202445; margin: 0px 0px 20px 0px; text-transform:uppercase; }
 h2 span { font-size: 24px; letter-spacing: 5px; line-height: 45px; font-weight: normal; text-transform: uppercase; background: #ffda84; padding: 10px; }
 
-h3 { font-size: 40px; line-height: 44px; margin: 0px 0px 20px 0px; text-transform:uppercase; }
+h3 { font-size: 34px; line-height: 44px; margin: 0px 0px 20px 0px; text-transform:uppercase; }
 h3 span { font-size: 24px; letter-spacing: 5px; line-height: 45px; font-weight: normal; text-transform: uppercase; background: #ffda84; padding: 10px; }
 
-h4 { font-size: 30px; margin: 15px 0px; }
+h4 { font-size: 28px; margin: 15px 0px; }
 h4 span { font-size:24px; font-weight:normal; display: block; }
 
-h5 { font-size: 24px; line-height: 24px; margin: 0px 0px 8px 0px; }
+h5 { font-size: 22px; line-height: 24px; margin: 0px 0px 8px 0px; }
 h5 span { font-weight: 500; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; }
 
 p,li { font-size: 20px; line-height: 30px; margin: 0px 0px 20px 0px; }
@@ -72,6 +75,14 @@ p,li { font-size: 20px; line-height: 30px; margin: 0px 0px 20px 0px; }
 .cs-first-h { margin-top: 0px !important; }
 .cs-last-p { margin: 0px !important; }
 .cs-margin-bottom { margin-bottom: 30px; }
+.cs-footer a { color: #ffffff; text-decoration: none; transition: 0.4s; }
+.cs-footer a:hover { color: #ffda84; transition: 0.4s; }
+hr.cs-sep-yellow {
+    height: 6px;
+    background: #fcd782;
+    border: none;
+    margin: 0px 0px 15px;
+}
 /* END FONT STYLES */
 
 /* IMAGES */
@@ -84,7 +95,7 @@ img {
 .cs-flex-box.cs-image img {
 	max-width: 90%;
     border: solid 8px #ffffff !important;
-    box-shadow: 0px 0px 40px #0000002b;
+    box-shadow: 0px 0px 40px #0000004d;
 }
 /* END IMAGES */
 
@@ -287,6 +298,19 @@ img.cs-watermark-logo {
 .cs-flex-box.cs-contact-box:hover.cs-flex-box.cs-contact-box p {
     color: #202020 !important;
 }
+.cs-flex-box.cs-business-name {
+    max-width: 30%;
+}
+.cs-flex-box.cs-business-info {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px;
+    justify-content: flex-end;
+}
+.cs-divider {
+	background: #ffda84;
+	width: 2px;
+}
 
 @media only screen and (max-width: 900px) {
 	.cs-flex {
@@ -366,5 +390,22 @@ img.cs-watermark-logo {
 	}
 	.cs-flex-box.cs-contact-box {
 	    padding: 20px;
+	}
+	.cs-flex-box.cs-business-info {
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+	    align-content: center;
+	    text-align: center;	
+	}
+	.cs-flex-box.cs-business-name {
+	    max-width: 100%;
+	    text-align: center;
+	    padding-top: 15px;
+	}
+	.cs-divider {
+	    background: #ffda84;
+	    width: 80%;
+	    height: 1px;
 	}
 }
