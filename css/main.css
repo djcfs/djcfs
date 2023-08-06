@@ -320,8 +320,8 @@ img.cs-watermark-logo {
 
 /* TESTIMONIALS */
 .cs-testimonials {
+	border-top: solid 8px #ffda84;
     box-shadow: 0px 0px 40px #34343438;
-    margin: 25px 0px;
 }
 .cs-cst-testimonial {
 	text-align: left;
