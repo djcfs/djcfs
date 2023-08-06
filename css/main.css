@@ -240,7 +240,7 @@ button.cs-full:hover {
 /* END OVERLAP SECTION */
 
 /* Watermark Logo */
-/*.cs-watermark {
+.cs-watermark {
 	position: relative;
 }
 .cs-watermark h2, .cs-watermark p , .cs-watermark img {
@@ -251,7 +251,7 @@ img.cs-watermark-logo {
     position: absolute;
     max-width: 35%;
     top: 9%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, 0);
     z-index: 1;
     opacity: 0.2;
@@ -261,7 +261,7 @@ img.cs-watermark-logo {
     -webkit-user-select: none;
     user-select: none;
     pointer-events: none;
-}*/
+}
 
 /* LOCATIONS BOX */
 .cs-locations {
