@@ -6,6 +6,9 @@ html { scroll-behavior: smooth;  }
 	width: 100%;
 	padding: 100px 0px;
 }
+.cs-main-inner {
+	padding: 30px 0px 50px 0px;
+}
 .cs-content {
 	width: 100%;
 	max-width: 1300px;
@@ -39,6 +42,9 @@ html { scroll-behavior: smooth;  }
 	background: url('../images/cubes.png');
 	background-color: #f2f2f2;
 }
+.cs-bg-yellow { background: #ffda84; }
+.cs-bg-blue { background: #272264; }
+.cs-bg-blue-2 { background: linear-gradient(45deg, #272264, #0a0087) }
 .cs-bg-gray { background: #ebebeb; }
 .cs-home-bg-foot {
     background: linear-gradient(1deg, #000000d6, #202445c7) , url(../images/home-bg-foot.PNG);
@@ -55,8 +61,8 @@ html { scroll-behavior: smooth;  }
 
 h1,h2,h3,h4,h5 { font-family: Poppins, sans-serif; }
 p,a,li,button,span,div { font-family: Montserrat, sans-serif; }
-
-h1 { font-size: 60px; line-height: 80px; margin: 0px 0px 20px 0px; text-transform:uppercase; }
+p.cs-last { margin-bottom: 0px; }
+h1 { font-size: 60px; line-height: 70px; margin: 0px 0px 20px 0px; text-transform:uppercase; }
 
 h2 { font-size: 44px; line-height: 44px; color: #202445; margin: 0px 0px 20px 0px; text-transform:uppercase; }
 h2 span { font-size: 24px; letter-spacing: 5px; line-height: 45px; font-weight: normal; text-transform: uppercase; background: #ffda84; padding: 10px; }
@@ -103,9 +109,10 @@ img {
 button {
 	border-radius: 5px;
 	border: none;
-	padding: 10px 20px;
-	font-size: 18px;
+	padding: 10px 20px 8px 20px;
+	font-size: 17px;
 	font-weight: bold;
+	letter-spacing: 1px;
 	transition: 0.4s;
 	box-shadow: 0px 3px 10px #0000003b;
 }
@@ -152,11 +159,8 @@ button.cs-full:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 55vh;
-    background: linear-gradient(1deg, #02002ecc, #3c3c3c8c) , url(../images/hero-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    height: 95vh;
+    background: linear-gradient(1deg, #aaaaaacc, #ffffff42) , url(../images/axiom-pattern.png);
     text-align: right;
 }
 .cs-sub-hero {
@@ -170,22 +174,24 @@ button.cs-full:hover {
     background-position: center center;
 }
 .cs-hero-content {
-    margin-bottom: 130px;
+    margin-bottom: 80px;
     text-align: center;
 }
-
+.cs-home-logo {
+	max-width: 80%;
+}
 .cs-hero h1 {
-	font-size: 90px !important;
-	letter-spacing:5px;
-	margin-right: -10px;
+	font-size: 70px !important;
+	line-height: 1.2;
 }
 .cs-hero h1 span {
-	display: block;
-	font-size: 70px !important;
-	font-weight:normal;
-	letter-spacing: 1px;
+	background: #ffda84;
+	font-size: 50px !important;
+	font-weight: bold;
+	padding: 7px 20px;
+	letter-spacing: 2px;
 }
-.cs-hero h1 , .cs-sub-hero h1 {
+.cs-sub-hero h1 {
 	color: #ffffff !important;
 	text-shadow: -3px 4px 6px #000000;
 }
@@ -193,7 +199,7 @@ button.cs-full:hover {
 
 /* OVERLAP SECTION */
 .cs-overlap {
-    margin-top: -7%;
+    margin-top: -5%;
 }
 .cs-overlap-our-team {
 	margin-top: -4% !important;
@@ -208,7 +214,7 @@ button.cs-full:hover {
 }
 .cs-services {
     background: #ffffff;
-    box-shadow: 0px 0px 40px #34343421;
+    box-shadow: 0px 0px 40px #34343438;
     padding: 30px 20px;
     text-align: center;
 }
@@ -234,7 +240,7 @@ button.cs-full:hover {
 /* END OVERLAP SECTION */
 
 /* Watermark Logo */
-.cs-watermark {
+/*.cs-watermark {
 	position: relative;
 }
 .cs-watermark h2, .cs-watermark p , .cs-watermark img {
@@ -255,7 +261,7 @@ img.cs-watermark-logo {
     -webkit-user-select: none;
     user-select: none;
     pointer-events: none;
-}
+}*/
 
 /* LOCATIONS BOX */
 .cs-locations {
@@ -312,6 +318,29 @@ img.cs-watermark-logo {
 	width: 2px;
 }
 
+/* TESTIMONIALS */
+.cs-testimonials {
+    box-shadow: 0px 0px 40px #34343438;
+    margin: 25px 0px;
+}
+.cs-cst-testimonial {
+	text-align: left;
+	padding: 40px;
+}
+.cs-cst-name {
+	position: relative;
+	text-align: left;
+	padding: 20px 40px;
+}
+img.cs-cst-logo {
+    position: absolute;
+    max-width: 200px;
+    top: -20px;
+    right: 40px;
+    box-shadow: 5px 3px 16px 0px #00000054;
+}
+/* END OF TESTIMONIALS */
+
 @media only screen and (max-width: 900px) {
 	.cs-flex {
 	    flex-direction: column;
@@ -321,16 +350,16 @@ img.cs-watermark-logo {
 	    padding: 60px;
 	}
 	.cs-hero {
-		background: linear-gradient(0deg, #02002ecc, #fffce547) , url(../images/hero-image.jpg);
-		background-size: cover;
+		background: linear-gradient(1deg, #aaaaaacc, #ffffff42) , url(../images/axiom-pattern.png);
+		background-repeat: repeat;
 		height: unset;
 	    min-height: unset;
-	    padding: 190px 30px 50px 30px;
+	    padding: 40px 30px 50px 30px;
 	    text-align: center;
 	}
 	.cs-hero-content {
 		padding: 0px;
-		    margin-bottom: 45px;
+		margin-bottom: 45px;
 	}
 	.cs-hero h1 {
 	    font-size: 66px !important;
