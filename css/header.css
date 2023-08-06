@@ -4,6 +4,10 @@
     padding: 20px 0px;
     background: #ffffff;
 }
+body.cs-home .cs-header {
+    position: absolute;
+    background: transparent;
+}
 .cs-header .cs-flex {
 	display: flex;
 	justify-content: space-between;
