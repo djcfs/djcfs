@@ -35,6 +35,10 @@ html { scroll-behavior: smooth;  }
 	align-content: center;
     justify-content: center;
 }
+.cs-flex-box.cs-image-2 {
+    display: flex;
+    gap: 15px;
+}
 /* END OF CONTAINERS */
 
 /* BACKGROUND */
@@ -48,7 +52,7 @@ html { scroll-behavior: smooth;  }
 .cs-bg-blue-2 { background: linear-gradient(45deg, #272264, #0a0087); }
 .cs-bg-gray { background: #ebebeb; }
 .cs-home-bg-foot {
-    background: linear-gradient(1deg, #000000d6, #202445c7) , url(../images/home-bg-foot.PNG);
+    background: linear-gradient(1deg, #000000d6, #202445c7) , url(../images/IMG_2132.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -99,7 +103,7 @@ img {
 .cs-flex-box.cs-image {
 	position: relative;
 }
-.cs-flex-box.cs-image img {
+.cs-flex-box.cs-image img , .cs-image-2-container img {
 	max-width: 90%;
     border: solid 8px #ffffff !important;
     box-shadow: 0px 0px 40px #0000004d;
@@ -160,7 +164,7 @@ button.cs-full:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 95vh;
+    height: 65vh;
     background: linear-gradient(1deg, #aaaaaacc, #ffffff42) , url(../images/axiom-pattern.png);
     text-align: right;
 }
@@ -179,7 +183,7 @@ button.cs-full:hover {
     text-align: center;
 }
 .cs-home-logo {
-	max-width: 40%;
+	max-width: 30%;
 }
 .cs-hero h1 {
 	font-size: 70px !important;
