@@ -325,24 +325,35 @@ img.cs-watermark-logo {
 
 /* TESTIMONIALS */
 .cs-testimonials {
+	position: relative;
+	max-width: 70%;
 	border-top: solid 8px #464a6f;
     box-shadow: 0px 0px 40px #34343438;
+    margin-bottom: 20px;
+}
+.cs-testimonials.cs-last {
+	margin-bottom: 0px;
 }
 .cs-cst-testimonial {
 	text-align: left;
-	padding: 40px;
+	padding: 30px 50px 25px 50px;
 }
 .cs-cst-name {
 	position: relative;
 	text-align: left;
-	padding: 20px 40px;
+	padding: 15px 40px;
 }
-img.cs-cst-logo {
+img.cs-quote-left {
     position: absolute;
-    max-width: 200px;
-    top: -20px;
-    right: 40px;
-    box-shadow: 5px 3px 16px 0px #00000054;
+    bottom: -10px;
+    left: -20px;
+    max-width: 40px;
+}
+img.cs-quote-right {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    max-width: 70px;
 }
 /* END OF TESTIMONIALS */
 
@@ -407,6 +418,24 @@ img.cs-cst-logo {
 	}
 	img.cs-watermark-logo {
 		max-width: 80%;
+	}
+	.cs-testimonials {
+		max-width: 90%;
+	}
+	.cs-cst-testimonial {
+		padding: 30px 40px 25px 40px;
+	}
+	img.cs-quote-left {
+	    position: absolute;
+	    bottom: -10px;
+	    left: -10px;
+	    max-width: 30px;
+	}
+	img.cs-quote-right {
+	    position: absolute;
+	    top: -30px;
+	    right: -30px;
+	    max-width: 50px;
 	}
 }
 
