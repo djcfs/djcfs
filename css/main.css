@@ -197,6 +197,7 @@ button.cs-full:hover {
 	letter-spacing: 2px;
 }
 .cs-sub-hero h1 {
+	font-size: 48px;
 	color: #ffffff !important;
 	text-shadow: -3px 4px 6px #000000;
 }
@@ -341,7 +342,12 @@ img.cs-watermark-logo {
 .cs-cst-name {
 	position: relative;
 	text-align: left;
-	padding: 15px 40px;
+	padding: 15px 40px 12px 40px;
+	display: flex;
+    justify-content: space-between;
+}
+.cs-stars img {
+    max-width: 25px;
 }
 img.cs-quote-left {
     position: absolute;
@@ -466,6 +472,16 @@ img.cs-quote-right {
 	    line-height: 1.2 !important;
 	    margin-right: 0px;
 	    margin-top: 10px;
+	}
+	.cs-cst-name {
+		padding: 15px 20px !important;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: space-between;
+	    gap: 5px;
+	}
+	.cs-stars img {
+	    max-width: 20px;
 	}
 	.cs-flex {
 	    gap: 10px;
